@@ -30,7 +30,7 @@ RUN wget https://github.com/mavlink/MAVSDK/releases/download/v0.31.0/mavsdk_0.31
     sudo dpkg -i mavsdk_0.31.0_ubuntu20.04_amd64.deb
 
 RUN apt-get update && \
-    apt-get upgrade gazebo9
+    apt-get upgrade -y gazebo9
 
 
 ENV QT_X11_NO_MITSHM 1

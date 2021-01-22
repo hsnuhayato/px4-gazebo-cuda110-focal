@@ -30,9 +30,5 @@ RUN wget https://raw.githubusercontent.com/PX4/Firmware/master/Tools/setup/ubunt
 RUN wget https://github.com/mavlink/MAVSDK/releases/download/v0.31.0/mavsdk_0.31.0_ubuntu20.04_amd64.deb && \
     sudo dpkg -i mavsdk_0.31.0_ubuntu20.04_amd64.deb
 
-RUN apt-get update && \
-    apt-get upgrade -y gazebo9
-
-
 ENV QT_X11_NO_MITSHM 1
 ENV XDG_RUNTIME_DIR /tmp/runtime-root
